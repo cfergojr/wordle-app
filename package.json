@@ -1,0 +1,25 @@
+{
+  "name": "chrisfergojr.com-new",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start:backend": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "-": "^0.0.1",
+    "axios": "^0.26.1",
+    "cool-ascii-faces": "^1.3.4",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "g": "^2.0.1",
+    "nodemon": "^2.0.15",
+    "npm": "^8.6.0",
+    "nvm": "^0.0.4"
+  }
+}

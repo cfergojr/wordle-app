@@ -1,0 +1,126 @@
+.masthead {
+    padding: 1em 2em;
+    font-size: 3rem;
+    font-weight: 800;
+    background-color: #ffffff;
+    color: #141c3a;
+    border-bottom: 1px solid #3a3a3c;
+}
+
+.masthead h1 {
+    text-align: center;
+}
+
+.wordle-container {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.message-container {
+    height: 30px;
+}
+
+.message-container p {
+    background-color: #818384;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0;
+    color: #fff;
+}
+
+.tile-container {
+    width: 330px;
+    margin-bottom: 30px;
+}
+
+.key-container {
+    width: 510px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+.key-container button {
+    width: 43px;
+    height: 58px;
+    border-radius: 4px;
+    border: none;
+    background-color: #818384;
+    color: #fff;
+    margin: 4px;
+}
+
+.key-container button:nth-child(11) {
+    margin-left: 30px;
+}
+
+.key-container button:nth-child(20),
+.key-container button:nth-child(28) {
+    width: 68px;
+}
+
+.tile-container div {
+    display: flex;
+}
+
+.tile-container .tile {
+    width: 62px;
+    height: 62px;
+    border: 2px solid #666;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3a3a3c;
+    font-weight: bold;
+    font-size: 1.75rem;
+    margin: 2px;
+}
+
+.tile.flip {
+    animation: 0.5s linear flipping;
+}
+
+@keyframes flipping {
+    0% {
+        transform: rotateX(0deg);
+    }
+    50% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+    }
+}
+
+.grey-overlay {
+    background-color: #3a3a3c !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.yellow-overlay {
+    background-color: #b59f3a !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+.green-overlay {
+    background-color: #538d4e !important;
+    border: none !important;
+    color: #fff !important;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) { 
+    .is-size-1-mobile { font-size: 3rem !important; }
+    .masthead {padding: 0;}
+    .key-container {width: 345px;}
+    .key-container button {width: 28px; height: 36px; margin: 3px;}
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wordle by Chris Fergo</title>
+    <script src="wordle.js" async></script>
+    <link href="img/favicon-32x32.png" rel="shortcut icon" type="image/png">
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/wordle.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<header class="masthead">
+  <h1>Wordle</h1>
+</header>
+<main>
+  <div class="wordle-container">
+    <div class="message-container"></div>
+    <div class="tile-container"></div>
+    <div class="key-container"></div>
+  </div>
+</main>
+<footer class="section is-primary is-small has-text-centered">
+    <div class="container is-narrow"><img class="logo" src="img/cf-logo-white.png" alt="Chris Fergo | Designer, Front-end Developer &amp; mentee" style="height:48px;">
+      <div class="columns is-centered"> 
+        <div class="column is-one-third">
+          <h1 class="title is-size-4-touch">Living, learning, &amp; leveling up one day at a time.</h1>
+        </div>
+      </div>
+      <div class="social-icons">
+        <p class="field"><a class="button is-medium" href="https://www.github.com/cfergojr" target="_blank"><span class="icon is-small"><i class="fab fa-github fa-fw"></i></span></a><a class="button is-medium" href="https://dribbble.com/cfergojr" target="_blank"><span class="icon is-small"><i class="fab fa-dribbble fa-fw"></i></span></a><a class="button is-medium" href="https://www.linkedin.com/in/cfergojr" target="_blank"><span class="icon is-small"><i class="fab fa-linkedin-in fa-fw"></i></span></a><a class="button is-medium"  href="mailto:cfergojr@gmail.com"><span class="icon is-small"><i class="far fa-envelope fa-fw"></i></span></a></p>
+      </div>
+      <div class="copyright">Handcrafted by me &copy;<span id="year"></span></div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="https://kit.fontawesome.com/0eea0b5636.js" crossorigin="anonymous"></script>
+</body>
+</html>
